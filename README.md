@@ -8,14 +8,13 @@
 
 This repository contains the complete Kubernetes infrastructure for a full-stack web application, deployed to a self-hosted 2-node K3s cluster on Raspberry Pi hardware. It represents the kind of real-world DevOps work done daily at engineering teams — not a cloud-managed service doing the heavy lifting, but hands-on infrastructure built from scratch.
 
-### The Four Phases
+### The Three Phases
 
-| Phase | Repository | What Was Built |
-|-------|-----------|----------------|
-| 1 — Development | [humor-memory-game](https://github.com/sjchristie/humor-memory-game) | Full-stack app: Node.js API, React frontend, PostgreSQL, Redis |
-| 2 — Containerisation | [humor-memory-game](https://github.com/sjchristie/humor-memory-game) | Docker, multi-stage builds |
-| 3 — Docker Compose | [humor-memory-game](https://github.com/sjchristie/humor-memory-game) | Docker Compose, multi-container orchestration |
-| 4 — Kubernetes | **This repository** | K3s cluster, GitOps, monitoring, persistent storage |
+| Phase                | Repository                                                           | What Was Built                                                              |
+| -------------------- | -------------------------------------------------------------------- | --------------------------------------------------------------------------- |
+| 1 — Development      | [humor-memory-game](https://github.com/sjchristie/humor-memory-game) | Full-stack app: Node.js API, React frontend, PostgreSQL, Redis              |
+| 2 — Containerisation | [humor-memory-game](https://github.com/sjchristie/humor-memory-game) | Docker, multi-stage builds<br>Docker Compose, multi-container orchestration |
+| 3 — Kubernetes       | **This repository**                                                  | K3s cluster, GitOps, monitoring, persistent storage                         |
 
 ---
 
@@ -177,5 +176,13 @@ humor-memory-game-kubernetes/
 
 ## Related Repositories
 
-- **Application source:** [sjchristie/humor-memory-game](https://github.com/sjchristie/humor-memory-game)
-- **This repository:** [christie62/humor-memory-game-kubernetes](https://github.com/christie62/humor-memory-game-kubernetes)
+- **Application source:**  [Humor Memory Game - Kubernetes](https://github.com/sjchristie/humor-memory-game-kubernetes)
+- **Docker repository:**   [Humor Memory Game - Frontend](https://hub.docker.com/repository/docker/christie62/humor-memory-game-frontend)
+					[Humor Memory Game - Backend](https://hub.docker.com/repository/docker/christie62/humor-memory-game-backend)
+
+
+
+
+
+
+
