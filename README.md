@@ -10,11 +10,11 @@ This repository contains the complete Kubernetes infrastructure for a full-stack
 
 ### The Three Phases
 
-| Phase                | Repository                                                           | What Was Built                                                              |
-| -------------------- | -------------------------------------------------------------------- | --------------------------------------------------------------------------- |
-| 1 — Development      | [humor-memory-game](https://github.com/sjchristie/humor-memory-game) | Full-stack app: Node.js API, React frontend, PostgreSQL, Redis              |
-| 2 — Containerisation | [humor-memory-game](https://github.com/sjchristie/humor-memory-game) | Docker, multi-stage builds<br>Docker Compose, multi-container orchestration |
-| 3 — Kubernetes       | **This repository**                                                  | K3s cluster, GitOps, monitoring, persistent storage                         |
+| Phase                | Repository                                                                         | What Was Built                                                              |
+| -------------------- | ---------------------------------------------------------------------------------- | --------------------------------------------------------------------------- |
+| 1 — Development      | [humor-memory-game Developer](https://github.com/sjchristie/humor-memory-game)     | Full-stack app: Node.js API, React frontend, PostgreSQL, Redis              |
+| 2 — Containerisation | [humor-memory-game Docker](https://github.com/sjchristie/humor-memory-game-devops) | Docker, multi-stage builds<br>Docker Compose, multi-container orchestration |
+| 3 — Kubernetes       | **This repository**                                                                | K3s cluster, GitOps, monitoring, persistent storage                         |
 
 ---
 
