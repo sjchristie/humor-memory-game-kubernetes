@@ -1,0 +1,15 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: app-config
+  namespace: humor-memory-game
+data:
+  NODE_ENV: development
+  DB_HOST: postgres
+  DB_PORT: "5432"
+  DB_NAME: humor_memory_game
+  REDIS_HOST: redis
+  REDIS_PORT: "6379"
+  API_PORT: "3001"
+  API_BASE_URL: /api
+  CORS_ORIGIN: http://frontend:80
