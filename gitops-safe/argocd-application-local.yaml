@@ -4,7 +4,7 @@ metadata:
   name: humor-game-local
   namespace: argocd
 spec:
-  project: humor-game-safe
+  project: humor-memory-game-safe
   source:
     repoURL: https://github.com/sjchristie/humor-memory-game-kubernetes
     targetRevision: gitops

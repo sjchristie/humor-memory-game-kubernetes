@@ -8,7 +8,7 @@ spec:
   sourceRepos:
     - https://github.com/sjchristie/humor-memory-game-kubernetes
   destinations:
-    - namespace: humor-memory-game
+    - namespace: humor-game
       server: https://kubernetes.default.svc
   namespaceResourceWhitelist:
     - group: ""
