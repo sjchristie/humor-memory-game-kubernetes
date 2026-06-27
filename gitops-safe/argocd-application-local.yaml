@@ -1,0 +1,16 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: humor-game-local
+  namespace: argocd
+spec:
+  project: humor-game-safe
+  source:
+    repoURL: https://github.com/sjchristie/humor-memory-game-kubernetes
+    targetRevision: gitops
+    path: gitops-safe/overlays/dev
+  destination:
+    server: https://kubernetes.default.svc
+    namespace: humor-game
+  syncPolicy:
+    automated: {}

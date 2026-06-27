@@ -1,0 +1,23 @@
+apiVersion: argoproj.io/v1alpha1
+kind: AppProject
+metadata:
+  name: humor-memory-game-safe
+  namespace: argocd
+spec:
+  description: "Safe GitOps project for Humor Memory Game"
+  sourceRepos:
+    - https://github.com/sjchristie/humor-memory-game-kubernetes
+  destinations:
+    - namespace: humor-memory-game
+      server: https://kubernetes.default.svc
+  namespaceResourceWhitelist:
+    - group: ""
+      kind: ConfigMap
+    - group: ""
+      kind: PersistentVolumeClaim
+    - group: ""
+      kind: Service
+    - group: apps
+      kind: Deployment
+    - group: autoscaling
+      kind: HorizontalPodAutoscaler

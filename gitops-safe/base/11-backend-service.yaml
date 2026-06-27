@@ -1,0 +1,16 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: backend
+  namespace: humor-memory-game
+  labels:
+    app: backend
+spec:
+  selector:
+    app: backend
+  ports:
+    - name: metrics
+      port: 3001
+      targetPort: 3001
+      protocol: TCP
+  type: ClusterIP
