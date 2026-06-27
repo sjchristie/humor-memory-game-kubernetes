@@ -11,6 +11,6 @@ spec:
     path: gitops-safe/overlays/dev
   destination:
     server: https://kubernetes.default.svc
-    namespace: humor-game
+    namespace: humor-memory-game
   syncPolicy:
     automated: {}
