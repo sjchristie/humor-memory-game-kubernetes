@@ -16,33 +16,33 @@ spec:
         app: frontend
     spec:
       containers:
-      - name: frontend
-        image: christie62/humor-memory-game-frontend:latest
-        imagePullPolicy: Always
-        ports:
-        - containerPort: 80
-        env:
-        - name: API_BASE_URL
-          valueFrom:
-            configMapKeyRef:
-              name: app-config
-              key: API_BASE_URL
-        livenessProbe:
-          httpGet:
-            path: /
-            port: 80
-          initialDelaySeconds: 30
-          periodSeconds: 10
-        readinessProbe:
-          httpGet:
-            path: /
-            port: 80
-          initialDelaySeconds: 5
-          periodSeconds: 5
-        resources:
-          limits:
-            memory: "256Mi"
-            cpu: "250m"
-          requests:
-            memory: "128Mi"
-            cpu: "100m"
+        - name: frontend
+          image: christie62/humor-memory-game-frontend:main-41eafbc
+          imagePullPolicy: Always
+          ports:
+            - containerPort: 80
+          env:
+            - name: API_BASE_URL
+              valueFrom:
+                configMapKeyRef:
+                  name: app-config
+                  key: API_BASE_URL
+          livenessProbe:
+            httpGet:
+              path: /
+              port: 80
+            initialDelaySeconds: 30
+            periodSeconds: 10
+          readinessProbe:
+            httpGet:
+              path: /
+              port: 80
+            initialDelaySeconds: 5
+            periodSeconds: 5
+          resources:
+            limits:
+              memory: "256Mi"
+              cpu: "250m"
+            requests:
+              memory: "128Mi"
+              cpu: "100m"
