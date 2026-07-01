@@ -17,7 +17,7 @@ spec:
     spec:
       containers:
         - name: frontend
-          image: christie62/humor-memory-game-frontend:main-41eafbc
+          image: christie62/humor-memory-game-frontend:main-1402d0e
           imagePullPolicy: Always
           ports:
             - containerPort: 80
